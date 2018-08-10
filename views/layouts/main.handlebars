@@ -15,12 +15,13 @@
 		<h1>Eat-da-Burger!</h1>
 	</div>
 </div>
+<hr>
 <div class="container">
 <div class="row">
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-         <h2>Created Burgers!</h2>
+         <h2>Created Burgers! </h2>
 					{{#each burgers}} {{#unless sleepy}} {{>burgers/burger-block sleep=true}} {{/unless}} {{/each}}
       </div>
     </div>
@@ -37,9 +38,10 @@
 </div>
 </div>
 
-<div class="container">
+<hr>
+<div class="container" id="cburger">
   <div class="card-body">
-    <h2>Add a Burger:</h2>
+    <h3>Add a Burger:</h3>
 <form class="create-form">
 
   <div class="form-group">
@@ -55,10 +57,11 @@
 
 
 <body>
+	<hr>
 	{{!--
 	<img src="/Homework/Burger/img/Burger.png" width="400px" id="burger"> --}}
 
-	<footer class="burgerFooter">
+	<footer class="burgerFooter" id="footer">
 		<div class="footer-copyright">
 			<div class="container">
 				<span class="grey-text text-lighten-4">@ JB's Burger House</span>
